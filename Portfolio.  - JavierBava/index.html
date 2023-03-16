@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javier Bava - Developer</title>
+
+  <!-- 
+    - logo
+  -->
+  <link rel="icon" type="image/png" sizes="16x16"  href="./favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- 
+    -  css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font 
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Javier <span>Bava.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <select name="language" id="lang">
+          <option value="es">Es</option>
+          <option value="en">En</option>
+        </select>
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home.</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">Sobre mi.</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Skills.</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Portfolio.</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contacto.</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - BANNER
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+
+          <picture>
+            <source src="./assets/images/images.png" media="(min-width: 768px)">
+            <source src="./assets/images/images.png" media="(min-width: 500px)">
+            <img src="./assets/images/images.png" alt="Banner pc diseño"
+              class="w-100">
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+
+          <h2 class="h2 hero-title">Si se puede imaginar, se puede programar.</h2>
+
+          
+
+        </div>
+
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="https://www.facebook.com/JavierBava" target="_blank" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/JaviBava" target="_blank" class="hero-social-link">
+              <ion-icon name="logo-github"></ion-icon>
+
+              <div class="tooltip">Github</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/javier-bava/" target="_blank" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+
+
+      <a href="#contact" class="btn btn-primary">Contactanos</a>
+
+      <!-- 
+        - #ESTADISTICAS
+      -->
+
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                2+ <strong>Años de Experiencia</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                20+ <strong>Proyectos Completados</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                10+ <strong>Clientes Satisfechos</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+      <!-- 
+        - #SOBRE
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img class="rotacion" src="./assets/images/idea.png" alt="Ruleta de colores animada">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">Sobre mi</p>
+
+          <h2 class="h3 section-title">¿Necesitas un producto creativo? ¡Podemos ayudarte!</h2>
+
+          
+          <img class="yo" title="Hola" src="./assets/images/profiles2.png">
+          <p class="section-text">
+            ¡Hola! Soy Javier Bava, un desarrollador apasionado por crear sitios web creativos con 
+            funcionalidades intuitivas. Disfruto el proceso de convertir ideas en realidad usando soluciones 
+            prácticas e inteligentes. Siempre tengo curiosidad por aprender nuevas habilidades, herramientas y conceptos. 
+            Además de trabajar en varios proyectos full stack en solitario, he trabajado con equipos creativos,  
+            lo que implica buena comunicación, cooperación, disciplina, organización y gestión de proyectos.
+          </p>
+
+          <div class="btn-group">
+            
+            <a href="#contact" class="btn btn-secondary">Contratame</a>
+            <a href="pdf/CV -- Javier -- Bava -- Desarrollo -- Web - - FULL.pdf" class="btn btn-primary" target="_blank">Descargar CV</a>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">Hard Skills</p>
+
+          <h2 class="h3 section-title">¿Qué habilidades de programación poseo?</h2>
+
+          <p class="section-text">
+            Desarrollo una interfaz de usuario simple, intuitiva y responsiva
+            que ayuda a los usuarios a hacer las cosas con menos esfuerzo y 
+            tiempo empleando las tecnologías más utilizadas en el mercado actual.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">TypeScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/typescript.png" alt="TypeScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">jQuery</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/jquery.png" alt="jQuery logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Bootstrap</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Angular</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/angular.png" alt="Angular logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Vue</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vue.png" alt="Vue logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Firebase</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/firebase.png" alt="Firebase logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Php</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/php.png" alt="Php logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">SASS</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/sass.png" alt="SASS logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Java</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/java.png" alt="Java logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Spring Boot</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/spring.png" alt="Spring Boot logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">MySQL</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/mysql.png" alt="MySQL logo">
+                </div>
+              </div>
+            </li>
+
+          
+          </ul>
+
+          <!--HERRAMIENTAS-->
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Ajax</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/ajax.png" alt="Ajax logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Gulp</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/gulp.png" alt="Gulp logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Webpack</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/webpack.png" alt="Webpack logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Github</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/github.png" alt="Github logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Npm</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/npm.png" alt="Npm logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Trello</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/trello.png" alt="Trello logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">ClickUp</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/clickup.png" alt="ClickUp logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Slack</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/slack.png" alt="Slack logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Photoshop</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/photoshop.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">NodeJS</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/node.png" alt="NodeJS logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <!--SOFT SKILLS-->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">Soft Skills</p>
+
+          <h2 class="h3 section-title">¿Qué habilidades blandas cultivo?</h2>
+
+          <p class="section-text">
+            Las Soft Skills son indispensables para un desempeño más competitivo de los equipos de trabajo 
+            y para establecer relaciones laborales sólidas y de confianza. Por eso, busco cultivar y mejorar estas 
+            habilidades de manera constante.
+          </p>
+
+        
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Comunicación Acertiva</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/comunicacion.png" alt="Comunicación logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Pensamiento Crítico</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/pensamientocritico.png" alt="Pensamiento crítico logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Liderazgo</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/liderazgo.png" alt="Liderazgo logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Actitud Positiva</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/actitud.png" alt="Actitud positiva logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Trabajo en Equipo</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/trabajoenequipo.png" alt="Trabajo en equipo logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Gestión del Tiempo</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/gestiontiempo.png" alt="Gestión del tiempo logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Inteligencia Emocional</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/inteligenciaemocional.png" alt="Inteligencia emocional logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Adaptabilidad</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/adaptabilidad.png" alt="Adaptabilidad logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Motivación</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/motivacion.png" alt="Motivación logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Aprendizaje Constante</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/aprendizaje.png" alt="Aprendizaje constante logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Creatividad</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/creatividad.png" alt="Creatividad logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Proactividad</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/proactividad.png" alt="Proactividad logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Planificación</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/planificacion.png" alt="Planificación logo">
+                </div>
+              </div>
+            </li>
+
+            </ul>
+          </div>
+
+        </section>
+
+
+
+
+      <!-- 
+        - #PROYECTOS
+      -->
+
+      <section class="project" id="portfolio">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">Mi portfolio</p>
+
+              <h2 class="h3 section-title">¡Observa nuestros proyectos!</h2>
+
+              <p class="section-text">
+                Desarrollamos el sitio web de mejor calidad, funcional y con proyección a largo plazo.
+                La interfaz bien documentada, limpia, fácil y elegante ayuda a cualquier cliente
+                aunque no posea conocimientos técnicos.
+              </p>
+
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/codificador.jpg" class="w-100" alt="A macintosh on a yellow background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Codificador/Decodificador de textos.</h3>
+
+                <time class="publish-date" datetime="2022-04">Abril 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/comerce.jpg" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">E-commerce</h3>
+
+                <time class="publish-date" datetime="2022-04">Mayo 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/food.jpg" class="w-100"
+                  alt="A Cassette tape on a mellow apricot background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Hamburguesería</h3>
+
+                <time class="publish-date" datetime="2022-04">Febrero 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/abogados.jpg" class="w-100"
+                  alt="Blue digital watch on a dark liver background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Web para Estudio Jurídico</h3>
+
+                <time class="publish-date" datetime="2022-04">Abril 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/responsive.png" class="w-100"
+                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Diseños Responsivos</h3>
+
+                <time class="publish-date" datetime="2022-04">Diciembre 2021</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/explore.jpg" class="w-100"
+                  alt="On a yellow background, a digital watch and a glass.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Portal de Destinos Turísticos</h3>
+
+                <time class="publish-date" datetime="2022-04">Junio 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/port.png" class="w-100"
+                  alt="A fujifilm instant camera on a dark electric blue background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Portfolios</h3>
+
+                <time class="publish-date" datetime="2022-04">Enero 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <!--CONTENIDO OCULTO-->
+
+          <span class="oculto" id="textoOculto">
+
+            <li>
+              <a href="#" class="project-card">
+  
+                <figure class="card-banner">
+                  <img src="./assets/images/libroweb.jpg" class="w-100" alt="A macintosh on a yellow background.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Librería web</h3>
+  
+                  <time class="publish-date" datetime="2022-04">Agosto 2022</time>
+                </div>
+  
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="project-card">
+  
+                <figure class="card-banner">
+                  <img src="./assets/images/floreria.jpg" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Florería</h3>
+  
+                  <time class="publish-date" datetime="2022-04">Mayo 2022</time>
+                </div>
+  
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="project-card">
+  
+                <figure class="card-banner">
+                  <img src="./assets/images/barberia.jpg" class="w-100"
+                    alt="On a dark liver background, Airport luggage car carrying a luggage.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Proyecto barbería</h3>
+  
+                  <time class="publish-date" datetime="2022-04">Marzo 2022</time>
+                </div>
+  
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="project-card">
+  
+                <figure class="card-banner">
+                  <img src="./assets/images/botanica.jpg" class="w-100"
+                    alt="On a yellow background, a digital watch and a glass.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Web Productos Naturales</h3>
+  
+                  <time class="publish-date" datetime="2022-04">Junio 2022</time>
+                </div>
+  
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="project-card">
+  
+                <figure class="card-banner">
+                  <img src="./assets/images/template.jpg" class="w-100"
+                    alt="A fujifilm instant camera on a dark electric blue background.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Diseños</h3>
+  
+                  <time class="publish-date" datetime="2022-04">Julio 2022</time>
+                </div>
+  
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="project-card">
+  
+                <figure class="card-banner">
+                  <img src="./assets/images/mode.jpg" class="w-100"
+                    alt="On a yellow background, a digital watch and a glass.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Moda</h3>
+  
+                  <time class="publish-date" datetime="2022-04">Agosto 2022</time>
+                </div>
+  
+              </a>
+            </li>
+
+            
+
+            
+          </span>
+
+
+
+          <li>
+            <button class="load-more" id="textoOculto_btn">Mostrar más</button>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contacto</p>
+
+          <h2 class="h3 section-title">¿Tienes algún proyecto? Por favor, dejanos un mensaje.</h2>
+
+          <p class="section-text">
+            Ponte en contacto y dejanos saber en qué te podemos ayudar. Rellena el formulario y nos contactaremos contigo lo antes posible.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Dirección:</h3>
+
+                <address class="contact-info">
+                  Camino Las Tropas 420 - San Andrés de Giles, Buenos Aires, Argentina.
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Teléfono & Whatsapp:</h3>
+
+                <a href="tel:01234567789" class="contact-info">+54 (11) 3635 9368</a>
+
+                <a href="tel:09765432200" class="contact-info">+54 2325 2325 2525</a>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:info@jack.com" class="contact-info">JavierBava@outlook.com</a>
+
+                <a href="mailto:support@jack.com" class="contact-info">javi77_80@hotmail.com</a>
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="https://www.facebook.com/JavierBava" target="_blank" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://github.com/JaviBava" target="_blank" class="contact-social-link">
+                    <div class="tooltip">Github</div>
+
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.linkedin.com/in/javier-bava/" target="_blank" class="contact-social-link">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/javier.bava/" target="_blank" class="contact-social-link">
+                    <div class="tooltip">Instagram</div>
+
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="" class="contact-form" id="formulario">
+
+          <div class="form-wrapper">
+
+            <label for="nombre" class="form-label" id="nombre">Nombre:</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="nombre" required placeholder="e.g John Doe" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+              
+            </div>
+            
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email:</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Teléfono:</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Número telefónico" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Mensaje:</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Escribe tu mensaje..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <input type="submit" class="btn btn-primary" value = "Enviar mensaje">
+
+        </form>
+        
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Javier <span>Bava.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2022 <a href="#">Javier Bava</a>. Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #IR ARRIBA
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Ir Arriba">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    -  js link
+  -->
+  <script src="./assets/js/script.js"></script>
+ 
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
