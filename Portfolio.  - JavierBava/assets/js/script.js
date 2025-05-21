@@ -117,10 +117,10 @@ function toggleText() {
     textoOculto.classList.toggle('mostrar');
 
     if(textoOculto.classList.contains('mostrar')){
-      textoOculto_btn.innerHTML = 'Mostrar menos';
+      textoOculto_btn.innerHTML = 'Mostrar menos.';
     }
     else {
-      textoOculto_btn.innerHTML = 'Mostrar más';
+      textoOculto_btn.innerHTML = 'Mostrar más.';
     }
 }
 

@@ -82,12 +82,12 @@ body.dark_theme {
 
 body.light_theme {
 
-  --bg-primary: hsl(0, 0%, 90%);
+  --bg-primary: hsl(0, 0%, 80%);
   --bg-secondary: hsl(0, 0%, 100%);
   --color-primary: hsl(0, 0%, 12%);
   --color-secondary: hsl(0, 0%, 37%);
   --card-shadow: hsla(0, 0%, 0%, 0.1);
-  --input-bg: hsl(0, 0%, 93%);
+  --input-bg: hsl(0, 0%, 83%);
 
   --shadow-1: 10px 10px 40px var(--card-shadow);
 
@@ -677,6 +677,7 @@ picture {
 
 .toggle-btn.active { color: var(--white); }
 
+
 .skills-box.active .skills-list,
 .skills-box .tools-list { display: none; }
 
@@ -690,6 +691,11 @@ picture {
   animation: fadeIn 0.5s ease-out forwards;
 }
 
+.card-icon{
+  cursor: pointer;
+}
+
+
 @keyframes fadeIn {
 
   0% { opacity: 0; }
@@ -698,6 +704,7 @@ picture {
 }
 
 .skill-card {
+  cursor: pointer;
   position: relative;
   background: var(--bg-secondary);
   width: 80px;
@@ -934,6 +941,45 @@ textarea.input-field {
   background: var(--raw-seinna);
 }
 
+/*ALERT*/
+
+
+  #custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #28a745;
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 12px;
+    display: none;
+    z-index: 9999;
+    font-size: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    gap: 0.5rem;
+    animation: fadeIn 0.15s ease-out forwards;
+    opacity: 0;
+  }
+
+  #custom-alert.show {
+    display: flex;
+    opacity: 1;
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+
+  #custom-alert.hide {
+    animation: fadeOut 0.3s ease-in forwards;
+  }
+
+  .alert-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+
+
 
 
 /*-----------------------------------*\
@@ -941,17 +987,34 @@ textarea.input-field {
 \*-----------------------------------*/
 
 .footer {
+  width: 100%;
   background: var(--bg-secondary);
   padding-block: 20px;
-  text-align: center;
   box-shadow: var(--shadow-1);
 }
 
-.footer .logo { margin-bottom: 15px; }
+/* Asegura que el fondo ocupe todo el ancho */
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* importante para pantallas chicas */
+}
+
+/* Alinea bien los elementos internos */
+.footer .logo {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
 
 .copyright {
   color: var(--color-secondary);
   line-height: 1.6;
+  font-size: 0.9rem;
+  text-align: right;
 }
 
 .copyright a {
@@ -959,8 +1022,6 @@ textarea.input-field {
   color: var(--raw-seinna);
   font-weight: 600;
 }
-
-
 
 
 
@@ -1378,6 +1439,9 @@ textarea.input-field {
    * FOOTER
    */
 
+  .footer {
+    width: 100%;
+  }
   .footer .container {
     display: flex;
     justify-content: space-between;
@@ -1427,3 +1491,4 @@ textarea.input-field {
   .about-banner { max-width: 450px; }
 
 }
+
